@@ -19,12 +19,12 @@ def gpio_setup():
 
 def callback(msg):
     print(msg.data)
-    if msg.data = 1:
+    if msg.data == 1:
         motor.start(20)
         motor.ChangeDutyCycle(12)
         print("go")
 
-    elif msg.data = 2:
+    elif msg.data == 2:
         motor.ChangeDutyCycle(0)
         print("stop")
 
